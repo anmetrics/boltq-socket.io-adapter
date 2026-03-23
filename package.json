@@ -1,0 +1,37 @@
+{
+  "name": "@boltq/socket.io-adapter",
+  "version": "1.0.0",
+  "description": "Socket.IO adapter backed by BoltQ message queue",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "keywords": [
+    "socket.io",
+    "adapter",
+    "boltq",
+    "message-queue",
+    "websocket",
+    "pub-sub",
+    "scaling"
+  ],
+  "peerDependencies": {
+    "socket.io": ">=4.0.0",
+    "socket.io-adapter": ">=2.4.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boltq/socket.io-adapter"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ]
+}
