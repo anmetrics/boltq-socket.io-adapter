@@ -18,17 +18,6 @@ Socket.IO adapter backed by [BoltQ](https://github.com/boltq/boltq) message queu
     └─────────┘            └─────────┘
 ```
 
-## Why BoltQ over Redis?
-
-| Feature | Redis Adapter | BoltQ Adapter |
-|---------|--------------|---------------|
-| Latency | ~0.1-0.5ms | ~0.05ms |
-| Memory footprint | 50-100MB | <50MB |
-| Persistence | No (Pub/Sub is fire-and-forget) | Optional (WAL) |
-| Dependencies | Redis server | BoltQ server (single binary) |
-| Clustering | Redis Cluster | Built-in Raft |
-| Protocol | TCP (RESP) | WebSocket (JSON) |
-
 ## Installation
 
 ```bash
